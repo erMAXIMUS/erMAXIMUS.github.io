@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="icon" href="../img/favicon-96x96.png" type="image/x-icon">
+</head>
+<body>
+    <!-- ÁngeloJesúsCayoArias Lenguaje de marcas 1damA -->
+    <h1>La Web de las Artes</h1>
+    <h2>SECCION: Contactanos</h2>
+    <ul>
+        <a href="#">
+            <li>Inicio</li>
+        </a>
+        <a href="musica.html">
+            <li>Música</li>
+        </a>
+        <a href="cine.html">
+            <li>Cine</li>
+        </a>
+        <a href="generosLiterarios.html">
+            <li>Géneros Literarios</li>
+        </a>
+        <a href="multimedia.html">
+            <li>Multimedia</li>
+        </a>
+        <a href="contacto.html">
+            <li>Contáctanos</li>
+        </a>
+    </ul>
+    <hr>
+    <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+        <fieldset>
+            <legend> Datos Personales </legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" autocomplete="off" placeholder="Introduce tu nombre.." required
+                    pattern="[A-Za-záéíóúÁÉÍÓÚ ]+" title="Solo admite Letras">
+                <span title="Campo Obligatorio">*</span>
+                <p>
+                    <label for="Apellidos">Apellidos:</label>
+                    <input type="text" name="nombre" autocomplete="off" placeholder="Introduce tu apellido..." required
+                        pattern="[A-Za-záéíóúÁÉÍÓÚ ]+" title="Solo admite Letras">
+                    <span title="Campo Obligatorio">*</span>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="correo" autocomplete="off" required="" placeholder="usuario@email.com" />
+                    <span title="Campo Obligatorio">*</span>
+                </p>
+                <p>
+                    <label>Fecha de Nacimiento:
+                        <input type="date" name="Fecha" min="31-01-2024" max="31-12-2024" step="1" required></input>
+                    </label>
+                </p>
+                <p>
+                    <label>Edad:
+                        <input type="number" name="edad" min="18" max="100" required > 
+                    </label>
+                </p>
+
+                <p>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" value="H" checked />Hombre
+                    <input type="radio" name="sexo" value="M" checked />Mujer
+                </p>
+                <p>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option selected>-Seleccionar-</option>
+                        <option>España</option>
+                        <option>Francia</option>
+                        <option>Portugal</option>
+                        <option>Italia</option>
+                    </select>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Otros Datos</legend>
+            <div>
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea cols="40" rows="10" spellcheck="true" placeholder="Introduce tu Mensaje..."></textarea>
+                <p>
+                    Adjunte una foto...
+                    <input type="file" name="archivo" /> <!--//como cambiar el mensaje predeterminado? -->
+                </p>
+
+                </p>
+            </div>
+        </fieldset>
+        <p>
+            <label for="empresa"></label>
+            <input type="checkbox" name="empresa" id="empresa" required>
+            <label for="empresa">He leído las Condiciones...</label>
+        </p>
+        <p>
+            <input class="boton" type="reset" value="Limpiar">
+            <input class="boton" type="submit" value="Enviar">
+        </p>
+    </form>
+
+    <h1>Centro de referencia</h1>
+
+    <iframe class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7794485179616!2d-16.285825790830046!3d28.45606417566035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1707921573358!5m2!1ses!2ses" " allowfullscreen="" loading="lazy">
+    </iframe>
+    <hr>
+    <a href="#">Inicio</a>
+</body>
+</html>
